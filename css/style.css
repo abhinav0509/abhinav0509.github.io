@@ -1,0 +1,140 @@
+body {
+ background-color: #323232;
+ position: relative;
+ font-family: 'Arvo', sans-serif;
+ font-style: normal;
+}
+
+#home {
+ padding-top: 50px;
+ height: 730px;
+ color: #fff;
+ background-size: cover;
+ background-color: #323232;
+ background-repeat: no-repeat;
+ font-style: normal;
+ background-image: url("../images/riverside.jpg");
+ font-size: 23px;
+ color: #fff;
+ /* snippet to blur background image
+ -webkit-filter: blur(2px);
+ -moz-filter: blur(2px);
+ -o-filter: blur(2px);
+ -ms-filter: blur(2px);
+ filter: blur(2px);
+ */
+}
+
+.intro-name {
+ font-weight: bold;
+}
+
+img, div {
+ max-width: 100%;
+}
+
+.nutshell {
+ height: 400px;
+ width: 400px;
+ border-color: white;
+ border-style: double;
+ border-width: 2px;
+ margin-left: 150px;
+ font-size: 50px;
+ border-radius: 10px;
+ box-shadow: 10px 10px 5px #fff;
+}
+
+#aboutme {
+ padding-top: 30px;
+ height: 700px;
+ color: #fff;
+ background-size: cover;
+ background-image: url("");
+ background-repeat: no-repeat;
+ background-color: #323232;
+}
+
+#section2 {
+ max-width: 100%;
+ padding-top: 30px;
+ height: 700px;
+ color: #fff;
+ background-size: cover;
+ background-image: url("../images/mixed-table.jpg");
+ background-repeat: no-repeat;
+ background-color: #323232;
+}
+
+
+/*
+.portfolio-item {
+ height: 200px;
+ width: 200px;
+ max-width: 200px;
+ margin-left: 20px;
+ border-color: #f44141;
+ border-style: solid;
+ border-width: 4px;
+ border-radius: 10px;
+ box-shadow: 10px 10px 5px #f44141;
+}*/
+
+#contactme {
+ padding-top: 30px;
+ height: 700px;
+ color: #fff;
+ background-size: cover;
+ background-color: #323232;
+ background-repeat: no-repeat;
+}
+
+#mypicture {
+ height: 100px;
+ width: 100px;
+ margin-left: 8px;
+}
+
+.social-media-border {
+ border-color: white;
+ border-style: solid;
+ border-width: 2px
+}
+
+.image-border {
+ border-style: solid;
+ border-width: 2px;
+ border-color: black;
+ border-radius: 50px;
+}
+
+a .fa {
+ color: #777;
+}
+
+.fa:hover {
+ color: white;
+}
+
+.icon-center {
+ display: inline-block;
+ text-align: center;
+}
+
+.fa-handshake-o:hover {
+ color: #4b5988;
+}
+
+#map {
+ width: 500px;
+ height: 400px;
+ background-color: grey;
+ margin-left: 40px;
+}
+
+.bottom-navbar {
+ margin-top: 55px;
+ position: relative;
+ color: black;
+ width: 1290px;
+}
