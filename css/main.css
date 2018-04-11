@@ -3,7 +3,7 @@
 }
 
 .nav-link, .navbar-brand {
- color: #f4f4f4;
+ color: #f4f4f4 !important;
  cursor: pointer;
 }
 
@@ -12,8 +12,8 @@
 }
 
 .nav-link:hover {
- background: #f4f4f4;
- color: #18A2AC;
+ background: #f4f4f4 !important;
+ color: #18A2AC !important;
 }
 
 .navbar-collapse {
