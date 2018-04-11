@@ -2,309 +2,224 @@
 <html>
 
 <head>
+ <meta charset="utf-8">
  <title>Abhinav</title>
-
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
- <script src="script/smoothscroll.js">
- </script>
- <link rel="stylesheet" href="css/style.css">
- <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo">
- <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Rancho&effect=fire-animation">
- <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Rancho&effect=fire ">
- <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple">
- <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3_uamb7bH2jmZY9ETSnqe7mrWWt9wdT4&callback=initMap">
- </script>
-
-
-
-
-
-
- <!--code for google map -->
- <script>
-  function initMap() {
-   var uluru = {
-    lat: 28.5221,
-    lng: 77.15111
-   };
-   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 4,
-    center: uluru
-   });
-   var marker = new google.maps.Marker({
-    position: uluru,
-    map: map
-   });
-  }
- </script>
- <!-- end of map section-->
-
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <link rel="stylesheet" type="text/css" href="css/main.css">
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 </head>
 
+<body>
+ <nav class="navbar navbar-expand-lg fixed-top ">
+  <a class="navbar-brand" href="#">Abhinav</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+   <ul class="navbar-nav mr-4">
 
+    <li class="nav-item">
+     <a class="nav-link" data-value="about" href="#about">About</a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-link " href="#portfolio" data-value="portfolio">Portfolio</a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-link " href="#awards" data-value="awards">Awards</a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-link " href="#contact-form" data-value="contact-form">Contact</a>
+    </li>
+   </ul>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-
- <nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-   <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-       <span class="icon-bar"></span>
-       <span class="icon-bar"></span>
-       <span class="icon-bar"></span>
-       <span class="icon-bar"></span>
-
-      </button>
-    <a class="navbar-brand" href="#section1">Abhinav Raj</a>
-   </div>
-   <div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-     <ul class="nav navbar-nav">
-      <li><a class="smoothscroll" href="#home" style="margin-left: 750px;">Home</a></li>
-      <li><a class="smoothscroll" href="#aboutme">About Me</a></li>
-      <li><a href="#section2">Portfolio</a></li>
-      <li><a href="#contactme">Contact Me</a></li>
-
-
-
-     </ul>
-
-    </div>
-   </div>
   </div>
  </nav>
- <div id="home" class="container-fluid">
-  <!--<h1 class="">Home</h1>-->
+ <!-- Start of Header Section-->
+ <header class="header">
+  <div class="overlay">
+   <div class="container">
+    <div class="description">
+     <h3>
+       Hello, I am Abhinav,Software Developer And UX Designer from India </h3>
+     <p>
+      I like working with new project which tests my creativity, experimenting with new mediums and techniques.Creating simple & effective design solutions are my forte
 
-  <div class="baner" style="margin-top:70px;">
+     </p>
+     <a href="#about"><button class="btn btn-outline-secondary">See more</button></a>
 
-   <div class="row banner">
-    <div class="col-md-12">
-     <h1 id="intro" style="text-align:center;">Hey there! i am <span class="intro-name "style="color:#f45342;">Abhinav Raj</span> </h1>
     </div>
-
    </div>
-   <h2 style="text-align:center;">I see things differently!</h2>
-
-   <h3 style="text-align:center;">I am a website developer and aspiring UI/UX designer based in New Delhi.
-           I love to code beautiful and user friendly website. </h3>
-
-
-
-
 
   </div>
-  <div class="quote" style="margin-top:180px;">
+ </header>
+ <!--End of header section-->
+
+ <!--About start-->
+ <div class="about" id="about">
+  <div class="container">
+   <h1 class="text-center">About</h1>
    <div class="row">
-    <div class="col-md-12">
-     <blockquote cite="">
-      <p style="font-size:25px;">Creativity is allowing yourself to make mistakes. Art is knowing which ones to keep.</p>
-
-     </blockquote>
+    <div class="col-lg-4 col-md-4 col-sm-12">
+     <img src="images/profile-pic.jpg" alt="" class="img-fluid">
+     <span class="text-justify">Hey! Its Me</span>
+    </div>
+    <div class="col-lg-8 col-md-8 col-sm-12 desc">
+     <h3>Abhinav Raj</h3>
+     <p>A 26-year old Developer + Designer from India. I am a Computer Science Engineering Graduate, From University of Pune. I like working with new project which tests my creativity, experimenting with new mediums and techniques. I have a knack for constructive
+      debates and discussions Creating simple & effective design solutions are my forte while trying to keep functionality as my primary concern. I give attention to details I am self-motivated, driven and eager to always improve myself, That’s the way
+      I feel complete.
+     </p>
     </div>
    </div>
   </div>
-  <!--end of quote-->
-
-  <div class="row">
-
-   <h3 style="text-align:center;">Hire Me</h3>
-
-  </div>
-  <div class="row">
-
-   <center><a href="#contactme"><button class="btn btn-primary " style="width:100px;"><i class="icon-center fa fa-handshake-o fa-2x" style="color:yellow;"></i></a></button>
-   </center>
-
-  </div>
-
-
 
  </div>
- <!-- end of home section-->
+ <!--end of about-->
 
+ <!--portfolio section-->
+ <div class="portfolio" id="portfolio">
+  <h1 class="text-center">Portfolio</h1>
+  <div class="container">
 
- <div id="aboutme" class="container-fluid">
-  <vr>
-   <h1 class="" style="font-family:Arvo,sans-serif">About Me</h1>
    <div class="row">
-
-    <!--<div class="col-md-6">
-     <h4 style="margin-left:300px;">Me in Nutshell</h4>
-      <img id="mypicture" class="image-border img-responsive" src="images/mypic4.jpg">
-     <div class="nutshell">
-      <div class="row">
-       <div class="col-md-4">
-        <img id="mypicture" class="image-border img-responsive" src="images/mypic4.jpg">
-       </div>
-       <div class="col-md-4">
-        <h3>Abhinav Raj</h3>
-
-       </div>
-
+    <div class="col-md-4 col-lg-4 col-sm-12">
+     <div class="card">
+      <div class="card-img">
+       <img src="images/work1-weatherapp.png" class="img-fluid">
       </div>
-      <div class="row">
-       <div class="col-md-12">
-        <h3 style="margin-left:35px;">Education: B.E University Of Pune</h3>
-        <h3 style="margin-left:35px;">Profession: Software Engineer</h3>
-        <h3></h3>
-       </div>
 
+      <div class="card-body">
+       <h4 class="card-title">Local Weather App</h4>
+       <p class="card-text">
 
-      </div> -->
+        Local Web based Weather app which detects your current location and dynamically fetches current weather data and displays it on a beautiful UI
+       </p>
+      </div>
+      <div class="card-footer">
+       <a href="https://codepen.io/abhinav05/full/LdZbyB/" target="_blank" class="card-link">Know more</a>
+      </div>
+     </div>
+    </div>
+    <div class="col-md-4 col-lg-4 col-sm-12">
+     <div class="card">
+      <div class="card-img">
+       <img src="images/work2-wiki.png" class="img-fluid">
+      </div>
 
+      <div class="card-body">
+       <h4 class="card-title">Wikipedia Search Engine</h4>
+       <p class="card-text">
+
+        This search engine works smartly and pulls relevant data from Wikipedia very quickly based on search keyword using their api in real time.
+       </p>
+      </div>
+      <div class="card-footer">
+       <a href="https://codepen.io/abhinav05/full/vRjNoq/" target="_blank" class="card-link">Know more</a>
+      </div>
+     </div>
+    </div>
+    <div class="col-md-4 col-lg-4 col-sm-12">
+     <div class="card">
+      <div class="card-img">
+       <img src="images/work3-quotes.png" class="img-fluid">
+      </div>
+
+      <div class="card-body">
+       <h4 class="card-title">Quote Machine</h4>
+       <p class="card-text">
+
+        Local Web based Weather app which detects your current location and dynamically fetches current weather data and displays it on a beautiful UI
+       </p>
+      </div>
+      <div class="card-footer">
+       <a href="https://codepen.io/abhinav05/full/JrdwWX/" target="_blank" class="card-link">Know more</a>
+      </div>
+     </div>
+    </div>
    </div>
-
- </div>
-
- </div>
-
- </div>
- </div>
- <!-- end of aboutme section-->
-
- <div id="section2" class="container-fluid">
-  <h1>Portfolio</h1>
-
-  <div class="row">
-   <div class="col-md-3" style="margin-left: 108px;">
-    <img src="images/update.png" class="updatesoonimage responsive img-responsive">
-
-   </div>
-   <div class="col-md-3 col-xs-3 col-sm-3 ">
-
-
-
-   </div>
-   <div class="col-md-3 col-xs-3 col-sm-3  ">
-
-
-
-   </div>
-   <div class="col-md-3 col-xs-3 col-sm-3 ">
-
-
-
-   </div>
-
   </div>
-  <div class="row" style="margin-top:30px;">
-   <div class="col-md-3 col-xs-3 col-sm-3 " style="margin-left: 108px;">
-
-
-
-   </div>
-   <div class="col-md-3 col-xs-3 col-sm-3 ">
-
-
-
-   </div>
-   <div class="col-md-3 col-xs-3 col-sm-3 ">
-
-
-
-   </div>
-   <div class="col-md-3 col-xs-3 col-sm-3 ">
-
-
-
-   </div>
-
-  </div>
-
-
-
  </div>
  <!--end portfolio-->
+ <!--start awards-->
+ <div class="awards" id="awards">
 
- <div id="contactme" class="container-fluid">
-
-  <h1 class="">Contact Me</h1>
-  <div class="row">
-   <center><span><i class="fa fa-envelope fa-3x" style="align:center;"></i></span></center>
-   <div class="twelve columns">
-    <h3 style="text-align:center;">Mail me at:abhinav0509@hotmail.com</h3>
-
-   </div>
-   <h3 style="margin-left:40px;">Find Me Here <i class="fa fa-map-signs" aria-hidden="true"></i></h3>
+  <div class="container">
+   <h1 class="text-center">Awards and Recognition</h1>
    <div class="row">
-    <div class="col-md-8">
-     <div id="map">
-
-
+    <div class="col-lg-4 col-md-4 col-sm-12 item">
+     <img src="images/microsoft.png" class="img-fluid" alt="Microsoft Certificate">
+     <div class="des">
+      Microsoft Certificate
      </div>
-
     </div>
-    <div class="col-md-4">
-     <h4 style="margin-left:80px;">AROUND THE WEB</h4>
+    <div class="col-lg-4 col-md-4 col-sm-12 item">
+     <img src="images/ibm.png" class="img-fluid" alt="IBM Certifiate">
+     <div class="des">
+      IBM Certification
+     </div>
     </div>
-    <div class="col-md-1">
-     <a href="https://github.com/abhinav0509" target="_blank"><i class="fa fa-github fa-3x"></i></a>
+    <div class="col-lg-4 col-md-4 col-sm-12 item">
+     <img src="images/Google-Scholarship.png" class="img-fluid" alt="Google Scholarship Badge">
+     <div class="des">
+      Google Scholarship Awardee
+     </div>
     </div>
-    <div class="col-md-1">
-
-     <a href="https://twitter.com/_ItsAbhinav" target="_blank"><i class="fa fa-twitter fa-3x"></i></a>
-    </div>
-    <div class="col-md-1">
-     <a href="https://www.freecodecamp.com/abhinav0509" target="_blank"><i class="fa fa-free-code-camp fa-3x"></i></a>
-    </div>
-    <div class="col-md-1">
-     <a href="https://www.instagram.com/abhinav.raj__/?hl=en" target="_blank"><i class="fa fa-instagram fa-3x"></i></a>
-    </div>
-    <div class="col-md-1">
-     <a href="https://www.snapchat.com/add/bornnosaint" target="_blank"><i class="fa fa-snapchat fa-3x"></i></a>
-    </div>
-
-    <!--<div class="col-md-1">
-     <a href="https://www.linkedin.com/in/abhinav-raj-97395241/" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a>
-    </div>-->
-    <div class="col-md-1">
-     <a href="https://plus.google.com/u/0/112420109251364735143" target="_blank"><i class="fa fa-google-plus fa-3x"></i></a>
-    </div>
-
-    <div class="col-md-1">
-     <a href="https://www.quora.com/profile/Abhinav-Raj-7" target="_blank"><i class="fa fa-quora fa-3x"></i></a>
-    </div>
-
    </div>
-   <!--end of row-->
    <div class="row">
-    <div class="col-md-12">
-     <nav class="navbar navbar-inverse bottom-navbar">
-      <div class="container-fluid">
-       <div class="row">
-        <div class="col-md-4">
-         <h4 style="color:#fff">Made by Abhinav</h4>
-        </div>
-        <div class="col-md-4">
-         <h4 style="color:#fff; padding-left: 60px;">All Rights Reserved <i class="fa fa-copyright"></i> 2017</h4>
-        </div>
-        <div class="col-md-4">
-         <h4 class="font-effect-fire-animation" style="color:#fff; padding-left: 334px;">Rise</h4>
-        </div>
-
-       </div>
-
-      </div>
-     </nav>
-
+    <div class="col-lg-4 col-md-4 col-sm-12 item">
+     <img src="images/design101.png" class="img-fluid" alt="Design-101">
+     <div class="des">
+      Design 101
+     </div>
     </div>
-
+    <div class="col-lg-4 col-md-4 col-sm-12 item">
+     <img src="images/interaction-design.png" class="img-fluid" alt="Interaction-Design">
+     <div class="des">
+      Interaction Design
+     </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 item">
+     <img src="images/uxresearch.png" class="img-fluid" alt="UX Research">
+     <div class="des">
+      UX Research & Strategy
+     </div>
+    </div>
    </div>
-
-
 
   </div>
 
+ </div>
+ <!--end awards-->
+ <!--start contact-->
+ <div class="contact-form" id="contact-form">
+  <div class="container">
+   <h1 class="text-center">Contact</h1>
+   <form>
+    <div class="row">
+     <div class="col-lg-4 col-md-4 col-sm-12">
+      <h1>Get in Touch</h1>
+     </div>
+     <div class="col-lg-8 col-md-8 col-sm-12 right">
+      <div class="form-group">
+       <input type="text" class="form-control form-control-lg" placeholder="Your Name" name="">
+      </div>
+      <div class="form-group">
+       <input type="email" class="form-control form-control-lg" placeholder="YourEmail@email.com" name="email">
+      </div>
+      <div class="form-group">
+       <textarea class="form-control form-control-lg">
+
+        </textarea>
+      </div>
+      <input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
+     </div>
+    </div>
+   </form>
+  </div>
+ </div>
+ <!--end contact-->
+ <script type="text/javascript" src='js/main.js'></script>
 </body>
 
 </html>
